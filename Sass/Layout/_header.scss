@@ -1,0 +1,65 @@
+header {
+    @include styleText($color-black-light, $fs-1, $fw-normal);
+}
+.header_left {
+    display: flex;
+    align-items: center;
+    .navbar-brand {
+        img {
+            width: 110px;
+        }
+    }
+    .header_form {
+        // Không khai báo grow = 0
+        flex-grow: 1; //100% width in flex box
+    }
+}
+
+.header_right {
+    .nav-link {
+        @include styleText($color-black-light, $fs-1, $fw-normal);
+    }
+    .ude-btnGroup {
+        white-space: nowrap;
+    }
+}
+header .form-control {
+    border-right: none;
+}
+.header_left .input-group-text {
+    @include styleSearchButton($color-red-0, $color-white-0);
+    &:hover {
+        @include styleSearchButtonHover ($color-red-0, $color-white-0);
+    }
+}
+
+//responsive
+header {
+    //1200px
+    @include responsive("extra-large"){
+        .header_right {
+            .buisiness,.teach {
+                display: none;
+            }
+        }
+    }
+    //768px
+    @include responsive("medium"){  
+        .header_left {
+            justify-content: center;
+            .header_cate,.header_form{
+                display: none;
+            }
+            .navbar-brand {
+                img {
+                    margin-left: 90px;
+                }
+            }
+        }
+        .header_right {
+            .ude-btnGroup {
+                display: none;
+            }
+        }
+    }
+}

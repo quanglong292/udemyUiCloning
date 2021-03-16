@@ -1,0 +1,29 @@
+.company {
+    background-color: #f2f3f5;
+    padding: 30px 0;
+    .company-container {
+        text-align: center;
+        .company-brand {
+            font-size: 13px;
+            img {
+                margin: 0 35px;
+            }
+        }
+        .company-contact {
+            width: 80%;
+            margin: 25px auto;
+            display: flex;
+            justify-content: space-evenly;
+            .company-contact-txt {
+                width: 40%;
+                a {
+                   @include styleText($color-black-0, $fs-2 - 1, $fw-bold);
+                }
+            }
+            .company-contact-hr {
+                border-right: 1px solid rgba(138, 135, 135, 0.637);
+            }
+            
+        }
+    }
+}

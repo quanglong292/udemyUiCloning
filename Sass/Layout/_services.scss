@@ -1,0 +1,45 @@
+.services {
+    background-color:#f2f3f5;
+    width: 100%;
+    .container {
+        display: flex;
+        // background-color: black;
+    }
+    .services-item {
+        display: flex;
+        background: white;
+        padding: 15px 10px;
+        margin: 25px 10px;
+        width: 33.3%;
+        i {
+            font-size: $fs-4 +2;
+            margin: 0 15px 0 5px;
+            color: $color-blue;
+        }
+        .services-item-txt {
+            p:first-child {
+                @include styleText(black, $fs-0+1, $fw-bold);
+            }
+            p:last-child {
+                @include styleText($color-black-light, $fs-0+1, normal);
+            }
+        }
+    }
+}
+
+
+.services {
+    //1200px
+    @include responsive("extra-large"){
+        
+    }
+    //768px
+    @include responsive("medium"){
+        .container {
+            display: block;
+            .services-item {
+                width: 95% !important;
+            }
+        }
+    }
+}

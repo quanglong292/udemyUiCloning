@@ -1,0 +1,52 @@
+// Gặp thẻ button tương tự, gọi class
+.ude-btnRed {
+    @include styleButton($color-red-0, $color-red-0, $border-radius, $pd-1 + 1, $pd-1 + 2);
+    @include styleText($color-white-0, $fs-0, $fw-bold-1);
+    &:hover {
+        @include styleHoverButton($color-red-2, $color-red-2, $color-white-0);
+    }
+}
+.ude-btnWhite {
+    // @include styleButton();
+    @include styleButton($color-red-0, $color-red-0, $border-radius, $pd-1 + 1, $pd-1 + 2);
+    @include styleText($color-white-0, $fs-0, $fw-bold-1);
+    &:hover {
+        @include styleHoverButton($color-red-2, $color-red-2, $color-white-0);
+    }
+}
+
+.company-contact-txt {
+    button {
+        @include styleButton($color-red-0, $color-red-0, $border-radius, $pd-1 + 1, $pd-1 + 2);
+        @include styleText($color-white-0, $fs-0, $fw-bold-1);
+        &:hover {
+            @include styleHoverButton($color-red-2, $color-red-2, $color-white-0);
+        }
+    }
+}
+
+.footer-first-content {
+    .btn {
+        border: 1px solid black;
+        width: 150px;
+        i {
+            margin-right: 5px;
+        }
+        &:focus {
+            background-color: rgba(0, 0, 0, 0.151);
+            box-shadow: none;
+        }
+    }
+}
+
+.banner {
+    .banner-content {
+        button {
+            @include styleButton($color-red-0, $color-red-0, $border-radius, $pd-1 + 1, $pd-1 + 2);
+            @include styleText($color-white-0, $fs-0, $fw-bold-1);
+            &:hover {
+                @include styleHoverButton($color-red-2, $color-red-2, $color-white-0);
+            }
+        }
+    }
+}

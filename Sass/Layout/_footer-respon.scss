@@ -1,0 +1,25 @@
+.respon-footer {
+    .footer-first-content {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .respon-footer-last {
+        width: 95%;
+        margin: 20px auto;
+        p {
+            margin: 10px 0 0 0;
+        }
+        img {
+            width: 50%;
+        }
+        a {
+            text-decoration: none;
+            @include styleText($color-blue, $fs-0 - 2, $fw-normal);
+            // line-height: 30px;
+            margin: 0 10px;
+            &:hover {
+                color: $color-black-0;
+            }
+        }
+    }
+}

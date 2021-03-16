@@ -1,0 +1,39 @@
+.intro {
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #4b056b, #db0964);
+}
+.intro .intro-content:nth-child(2) {
+    margin: 0 150px;
+}
+.intro-content {
+   display: flex;
+   align-items: center;
+   margin: 10px 0;
+   color: $color-white-0;
+}
+.intro-content i {
+    font-size: 50px;
+    margin-right: 20px;;
+}
+.intro-content-text {
+    font-size: $fs-0 +2;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.intro {
+    @include responsive("large"){
+        p {
+            line-height: 20px;
+        }
+        i {
+            display: none;
+        }
+    }
+    //768px
+    @include responsive("medium"){
+        width: 0;
+        height: 0;
+    }
+}

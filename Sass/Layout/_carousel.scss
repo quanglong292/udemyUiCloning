@@ -1,0 +1,43 @@
+.udeCarousel {
+    background-image: url(../img/cover.jpg);
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    color: white;
+}
+
+.udeCarousel .udeCarousel-content {
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    width: 30%;
+}
+.udeCarousel-content .input-group {
+    width: 100%;
+}
+.udeCarousel-content .input-group input {
+    font-size: 20px;
+    font-weight: lighter;
+    border: none;
+}
+.udeCarousel-content .input-group-text {
+    @include styleSearchButton($color-red-0, $color-white-0);
+    &:hover {
+        @include styleSearchButtonHover($color-red-0, $color-white-0);
+    }
+}
+
+.udeCarousel {
+    //1200px
+    @include responsive("large") {
+        .udeCarousel-content {
+            width: 80%;
+        }
+    }
+    //768px
+    @include responsive("medium") {
+        .udeCarousel-content {
+            width: 80%;
+        }
+    }
+}

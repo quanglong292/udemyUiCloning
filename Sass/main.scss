@@ -1,0 +1,41 @@
+// Chứa các đường dẫn tới các file con
+// ĐÚNG THỨ TỰ
+// Helper
+@import './Helper/variables';
+@import './Helper/mixin';
+
+// Vendors (chỉ imporst file scss của thủ viện)
+// @import './Vendors/'
+
+// Base 
+@import './Base/reset';
+
+//Components 
+@import './Components/button';
+
+//Layout
+@import './Layout/header';
+
+//Header
+@import './Layout/carousel';
+//Pages
+// @import './Pages/'
+
+// Themes
+@import './Layout/intro';
+
+@import './Layout/course';
+
+@import './Layout/services';
+
+@import './Layout/catagories';
+
+@import './Layout/feedback';
+
+@import './Layout/company';
+
+@import './Layout/footer';
+
+@import './Layout/footer-respon';
+
+@import './Layout/banner';
